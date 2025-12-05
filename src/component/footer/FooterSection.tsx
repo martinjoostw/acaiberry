@@ -37,9 +37,9 @@ const FooterSection = ({
                       <i className="fa-regular fa-phone-volume"></i>
                     </span>
                     <div className="rv-5-about__call-txt">
-                      <h6>Our Phone</h6>
+                      <h6>Nuestro Whatsapp</h6>
                       <a href="tel:123654564388" className="">
-                        (123) 654 - 5643 88
+                        +56990415766
                       </a>
                     </div>
                   </div>
@@ -54,14 +54,14 @@ const FooterSection = ({
                       <i className="fa-light fa-envelopes"></i>
                     </span>
                     <div className="rv-5-about__call-txt">
-                      <h6>Our Email</h6>
+                      <h6>Nuestro correo</h6>
                       <a href="tel:123654564388" className="">
-                        example@gmail.com
+                        zonaacaichile@gmail.com
                       </a>
                     </div>
                   </div>
                 </div>
-                <div className="col-md-4 col-sm-6">
+                {/* <div className="col-md-4 col-sm-6">
                   <div
                     className={`rv-5-about__call rv-9-footer__contact-card ${
                       footerContactStyle ? footerContactStyle : ""
@@ -71,13 +71,13 @@ const FooterSection = ({
                       <i className="fa-light fa-location-dot"></i>
                     </span>
                     <div className="rv-5-about__call-txt">
-                      <h6>Our Address</h6>
+                      <h6>Nuestra dirección</h6>
                       <a href="tel:123654564388" className="">
                         Q4HP+QP New York, USA
                       </a>
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -89,8 +89,7 @@ const FooterSection = ({
               <div className="rv-1-footer__about">
                 <h5 className="rv-1-footer-widget__title">About us</h5>
                 <p className="rv-1-footer__about-txt">
-                  Morbi pharetra, eros sed euismod pellentesque, nulla risus
-                  lobortis purusquis maximus.
+                  Creemos en la energía que nace de lo natural. Trabajamos con 100% açaí orgánico, sin saborizantes ni aditivos. Ofrecemos un producto auténtico, con 0% azúcar añadida, ideal para nutrir tu cuerpo con energía real antes o después de entrenar.
                 </p>
                 <div className="rv-1-socials rv-15-socials rv-20-socials">
                   <a href="#">
@@ -109,7 +108,7 @@ const FooterSection = ({
               </div>
             </div>
 
-            <div className="col-xl-2 col-lg-3 col-md-6 col-sm-5">
+            {/* <div className="col-xl-2 col-lg-3 col-md-6 col-sm-5">
               <div className="rv-1-footer-widget rv-20-footer-widget">
                 <h5 className="rv-1-footer-widget__title">Our Services</h5>
                 <ul className="rv-8-footer-widget__links">
@@ -205,7 +204,7 @@ const FooterSection = ({
                   </div>
                 </form>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
@@ -215,17 +214,16 @@ const FooterSection = ({
           <div className="row align-items-center gy-3">
             <div className="col-md-7">
               <p className="rv-2-copyright rv-1-copyright mb-0 text-center text-md-start">
-                &copy; {new Date().getFullYear()} Codebasket All Rights Reserved
-                by site
+                &copy; {new Date().getFullYear()} HYPEBERRY All Rights Reserved.
               </p>
             </div>
 
-            <div className="col-md-5">
+            {/* <div className="col-md-5">
               <div className="rv-2-footer__nav rv-20-footer-bottom__nav">
                 <a href="#">Privacy Policy</a>
                 <a href="#">Term of Service</a>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

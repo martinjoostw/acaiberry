@@ -18,7 +18,7 @@ const Home1 = () => {
     <main>
       <HeaderSection />
       <BannerSection />
-      <ServiceSection />
+      {/* <ServiceSection />
       <AboutSection />
       <VideoSection />
       <TestimonialSection />
@@ -26,10 +26,10 @@ const Home1 = () => {
       <PortfolioSection />
       <TeamSection />
       <ContactSection />
-      <BlogSection />
+      <BlogSection /> */}
       <FooterSection
         style="rv-20-footer"
-        logo="assets/img/rv-20-logo-light.png"
+        logo="/acaiberry/assets/img/rv-20-logo-light.png"
         footerContactStyle="rv-20-footer__contact-card"
         footerFormStyle="rv-20-footer-nwsltr__form"
       />

@@ -12,6 +12,7 @@ body {
     font-family: var(--inter);
     color: var(--black-0);
     overflow-x: hidden;
+    background-color: #293D5A;
 }
 
 h1,
@@ -156,7 +157,7 @@ html.lenis {
     z-index: 99;
     transition: 0.4s ease;
     animation: fadeIn 1s ease;
-    background: rgba(255, 255, 255);
+    background: #293D5A;
 }
 
 @keyframes fadeIn {

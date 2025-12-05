@@ -52,13 +52,13 @@ const BannerSection = () => {
               <div className="col-sm-10 col-md-9 col-lg-8 col-xl-7">
                 <div className="rv-20-banner_content">
                   <span className="rv-20-banner_content_sub_heading rv-text-anime d-flex">
-                    <span></span> A Dream Garden Home
+                    <span></span> Energía Natural
                   </span>
                   <h1 className="rv-20-banner_content_heading rv-text-anime">
-                    Bridging Nature & Intelligence.
+                    Potencia tu energía. Disfruta lo saludable.
                   </h1>
 
-                  <div className="rv-20-banner_button_area">
+                  {/* <div className="rv-20-banner_button_area">
                     <a href="#" className="rv-20-banner_content_btn">
                       Explore More
                     </a>
@@ -69,7 +69,7 @@ const BannerSection = () => {
                     >
                       <i className="fas fa-play"></i> Play Now
                     </a>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
@@ -81,12 +81,12 @@ const BannerSection = () => {
               <div className="col-sm-10 col-md-9 col-lg-8 col-xl-7">
                 <div className="rv-20-banner_content">
                   <span className="rv-20-banner_content_sub_heading rv-text-anime">
-                    <span></span> A Dream Garden Home
+                    <span></span> Bienestar Diario
                   </span>
                   <h1 className="rv-20-banner_content_heading rv-text-anime">
-                    Elevate your outdoor oasis.
+                    Cargado de antioxidantes y nutrientes esenciales.
                   </h1>
-                  <div className="rv-20-banner_button_area">
+                  {/* <div className="rv-20-banner_button_area">
                     <a href="#" className="rv-20-banner_content_btn">
                       Explore More
                     </a>
@@ -97,7 +97,7 @@ const BannerSection = () => {
                     >
                       <i className="fas fa-play"></i> Play Now
                     </a>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>

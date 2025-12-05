@@ -72,7 +72,7 @@ const HeaderSection = () => {
   }, [closeSidebar]);
   return (
     <header className="rv-1-header rv-inner-header p-0">
-      <div className="rv-20-header-top">
+      {/* <div className="rv-20-header-top">
         <div className="container">
           <div className="row gy-2 align-items-center">
             <div className="col-lg-6">
@@ -115,7 +115,7 @@ const HeaderSection = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div
         className={`rv-20-header-bottom to-be-fixed ${
@@ -128,7 +128,7 @@ const HeaderSection = () => {
               <div className="rv-1-logo">
                 <Link to="/">
                   <img
-                    src="assets/img/rv-20-logo.png"
+                    src="/acaiberry/assets/img/rv-20-logo.png"
                     alt="logo"
                     className="logo"
                   />
@@ -155,11 +155,11 @@ const HeaderSection = () => {
                   </button>
                 </div>
 
-                <NavSection style="rv-20-header__nav" />
+                {/* <NavSection style="rv-20-header__nav" /> */}
               </div>
             </div>
 
-            <div className="col-lg-3 col-8 col-xxs-6 text-end order-1 order-lg-2">
+            {/* <div className="col-lg-3 col-8 col-xxs-6 text-end order-1 order-lg-2">
               <div className="d-flex justify-content-end">
                 <div className="rv-inner-header-right-btns rv-15-header-right-btns rv-20-header-bottom-right-btns">
                   <a href="#" className="d-sm-inline-block d-none">
@@ -174,7 +174,7 @@ const HeaderSection = () => {
                   <i className="fa-regular fa-bars"></i>
                 </button>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
