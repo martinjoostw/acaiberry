@@ -1,75 +1,11 @@
-import { useEffect, useRef, useState } from "react";
-import NavSection from "../navigation/NavSection";
-import { useAppDispatch } from "../../redux/hooks";
-import { toggleSearchModalOpen } from "../../redux/features/searchModalSlice";
+/* eslint-disable @typescript-eslint/no-unused-vars */
+import { useRef } from "react";
 import { Link } from "react-router-dom";
 
 const HeaderSection = () => {
-  const dispatch = useAppDispatch();
 
-  const openSearchModal = () => {
-    dispatch(toggleSearchModalOpen());
-  };
-  const [isHeaderFixed, setIsHeaderFixed] = useState(false);
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const sidebarRef = useRef<HTMLDivElement>(null);
-  const openSidebar = () => {
-    setIsSidebarOpen(true);
-    setIsHeaderFixed(false);
-  };
 
-  const closeSidebar = () => {
-    setIsSidebarOpen(false);
-  };
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY >= 200 && !isSidebarOpen) {
-        setIsHeaderFixed(true);
-      } else {
-        setIsHeaderFixed(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY >= 200 && !isSidebarOpen) {
-        setIsHeaderFixed(true);
-      } else {
-        setIsHeaderFixed(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [isSidebarOpen]);
-
-  useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
-      if (
-        sidebarRef.current &&
-        !sidebarRef.current.contains(event.target as Node)
-      ) {
-        closeSidebar();
-      }
-    };
-
-    document.addEventListener("mousedown", handleClickOutside);
-
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, [closeSidebar]);
   return (
     <header className="rv-1-header rv-inner-header p-0">
       {/* <div className="rv-20-header-top">
@@ -118,9 +54,7 @@ const HeaderSection = () => {
       </div> */}
 
       <div
-        className={`rv-20-header-bottom to-be-fixed ${
-          isHeaderFixed ? "fixed" : ""
-        }`}
+        className={`rv-20-header-bottom to-be-fixed `}
       >
         <div className="container">
           <div className="row align-items-center">
@@ -138,9 +72,7 @@ const HeaderSection = () => {
 
             <div className="col-md-6 order-2 order-lg-1">
               <div
-                className={`rv-1-header-nav__sidebar ${
-                  isSidebarOpen ? "active" : ""
-                }`}
+                className={`rv-1-header-nav__sidebar`}
                 ref={sidebarRef}
               >
                 <div className="sidebar-heading d-lg-none d-flex align-items-center justify-content-between">
@@ -149,7 +81,6 @@ const HeaderSection = () => {
                   </Link>
                   <button
                     className="rv-3-def-btn rv-1-header-mobile-menu-btn rv-20-mobile-menu-btn sidebar-close-btn"
-                    onClick={closeSidebar}
                   >
                     <i className="fa-regular fa-xmark"></i>
                   </button>

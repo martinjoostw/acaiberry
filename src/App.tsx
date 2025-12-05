@@ -1,25 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home1 from "./pages/Home1";
-import Home2 from "./pages/Home2";
-import Home3 from "./pages/Home3";
-import About from "./pages/About";
-import Services from "./pages/Services";
-import ServiceDetailsPage from "./pages/ServiceDetailsPage";
-import Projects from "./pages/Projects";
-import ProjectDetailsPage from "./pages/ProjectDetailsPage";
-import TeamMembers from "./pages/TeamMembers";
-import SignIn from "./pages/SignIn";
-import SignUp from "./pages/SignUp";
-import CartPage from "./pages/CartPage";
-import WishlistPage from "./pages/WishlistPage";
-import CheckoutPage from "./pages/CheckoutPage";
-import ShopPage from "./pages/ShopPage";
-import ShopDetailsPage from "./pages/ShopDetailsPage";
-import ShopSidebarPage from "./pages/ShopSidebarPage";
-import BlogPage from "./pages/BlogPage";
-import BlogDetailsPage from "./pages/BlogDetailsPage";
-import ContactPage from "./pages/ContactPage";
-import ErrorPage from "./pages/ErrorPage";
 
 function App() {
   return (

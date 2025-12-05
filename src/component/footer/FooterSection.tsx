@@ -10,7 +10,6 @@ const FooterSection = ({
   style,
   logo,
   footerContactStyle,
-  footerFormStyle,
 }: Props) => {
   return (
     <footer className={`rv-9-footer ${style ? style : ""}`}>
